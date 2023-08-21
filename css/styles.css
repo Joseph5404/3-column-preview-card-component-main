@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Lexend+Deca:100,200,300,regular,500,600,700,800,900);
+
+@import url(https://fonts.googleapis.com/css?family=Big+Shoulders+Display:100,200,300,regular,500,600,700,800,900);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', 'Roboto';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+    
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three equally sized columns */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    border-radius: 5px;
+    display: flex;
+    overflow: hidden;
+           
+}
+
+.card{
+    padding: 35px 40px 35px 35px;
+    
+}
+
+.card1 {
+    background-color: hsl(31, 77%, 52%);
+           
+}
+.card2 {
+    background-color: hsl(184, 100%, 22%);
+           
+}
+.card3 {
+    background-color: hsl(179, 100%, 13%);
+           
+}
+
+h2{
+    font-family: 'Big Shoulders Display';
+    color: hsl(0, 0%, 95%);
+    font-weight: 800;
+    padding: 20px 0 20px 0;
+}
+
+p{
+    font-family: 'Lexend Deca';
+    font-size: 11px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    line-height: 15px;
+    margin-bottom: 20px;
+}
+
+.btn{
+
+background-color: hsl(0, 0%, 95%);
+cursor: pointer;
+text-align: center;
+padding: 7px 20px;
+border-radius: 30px;
+border: none;
+transition: 0.3s, color 0.3s;
+margin-top: 30px;
+
+}
+
+.card1 .btn{
+    color: hsl(31, 77%, 52%);
+}
+.card2 .btn{
+    color: hsl(184, 100%, 22%);
+}
+
+.card3 .btn{
+    color: hsl(179, 100%, 13%);
+}
+
+.btn:hover{
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+img{
+    width: 35px;
+}
+
+
+@media (max-width: 375px) {
+
+    .card-container {
+        max-width: 410px;
+        display: block;
+        border-radius: 1rem;
+        overflow: hidden;
+        padding: 50px 20px;
+    
+    }
+
+    .card1{
+        margin-top: 200px;
+    }
+
+
+}
+
+
+
+
